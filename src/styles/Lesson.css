@@ -1,0 +1,22 @@
+.lesson {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border: 1px solid #000;
+  color: black;
+}
+
+.new-lesson {
+  background-color: #efd6ac;
+}
+
+.edit-lesson {
+  background-color: #efd6ac;
+}
+
+.table {
+  color: #efd6ac;
+}
