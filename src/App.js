@@ -4,6 +4,9 @@ import EditLesson from "./components/EditLesson";
 import PracticePage from "./components/PracticePage";
 import EditPage from "./components/EditPage";
 import Navbar from "./components/NavBar";
+import Exercises from "./components/Exercises";
+import ExercisePage from "./components/ExercisePage";
+import Composition from "./components/Composition";
 
 function HomePage() {
   return (
@@ -19,6 +22,10 @@ function HomePage() {
         <EditLesson />
         <Practice />
       </div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <Exercises />
+        <Composition />
+      </div>
       {/* other components specific to the home page */}
     </div>
   );
@@ -33,6 +40,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/practice" element={<PracticePage />} />
           <Route path="/edit" element={<EditPage />} />
+          <Route path="/exercises" element={<ExercisePage />} />
           {/* other routes here */}
         </Routes>
       </div>

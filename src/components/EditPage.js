@@ -7,20 +7,21 @@ import {
   TableHead,
   TableRow,
   TextField,
-} from "@material-ui/core";
+} from "@mui/material";
 import { api } from "../services/api"; // import your api
 import ColumnFilter from "./ColumnFilter";
 import "../styles/App.css";
-import Box from "@material-ui/core/Box";
-import Button from "@material-ui/core/Button";
 import { addVocabularyItem } from "../services/api.js";
 import { deleteVocabularyItem } from "../services/api.js";
-import Dialog from "@material-ui/core/Dialog";
-import DialogTitle from "@material-ui/core/DialogTitle";
 //import DialogContent from "@material-ui/core/DialogContent";
-import DialogActions from "@material-ui/core/DialogActions";
-import { TablePagination } from "@material-ui/core";
 import ImportComponent from "../components/ImportComponent.js";
+
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Dialog from "@mui/material/Dialog";
+import DialogTitle from "@mui/material/DialogTitle";
+import DialogActions from "@mui/material/DialogActions";
+import TablePagination from "@mui/material/TablePagination";
 
 const EditPage = () => {
   const [vocabulary, setVocabulary] = useState([]);

@@ -1,5 +1,5 @@
 import React from "react";
-import { LinearProgress, Box, Typography } from "@material-ui/core";
+import { LinearProgress, Box, Typography } from "@mui/material";
 
 const ProgressBar = ({ progress }) => {
   return (

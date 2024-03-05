@@ -6,10 +6,10 @@ import {
   DialogContent,
   DialogTitle,
   TextField,
-} from "@material-ui/core";
+} from "@mui/material";
 import axios from "axios";
 import { addVocabularyItem } from "../services/api";
-import CircularProgress from "@material-ui/core/CircularProgress";
+import CircularProgress from "@mui/material/CircularProgress";
 
 function ImportComponent() {
   const [open, setOpen] = useState(false);

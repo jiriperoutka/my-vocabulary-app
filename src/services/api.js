@@ -111,5 +111,17 @@ export const api = {
         console.error("Error:", error);
       });
   },
+  getOpenAIExersice: function () {
+    return fetch(`${API_URL}/ask`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  },
   // other methods...
 };

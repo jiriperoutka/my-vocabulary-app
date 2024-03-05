@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import ProgressBar from "../components/ProgressBar";
 import { getVocabularyByLesson } from "../services/api";
-import { Button, TextField } from "@material-ui/core";
+import { Button, TextField } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import {
   Dialog,
@@ -10,9 +10,10 @@ import {
   DialogContent,
   DialogContentText,
   DialogTitle,
-} from "@material-ui/core";
+} from "@mui/material";
 import { getVocabularyForPractice } from "../services/api";
-import { makeStyles } from "@material-ui/core/styles";
+//import { makeStyles } from "@mui/styles";
+import { styled } from "@mui/system";
 import { api } from "../services/api";
 
 const language = localStorage.getItem("language");
@@ -20,7 +21,7 @@ const lessonNumber = localStorage.getItem("lessonNumber");
 
 console.log("language", language + "lessonNumber", lessonNumber);
 
-const useStyles = makeStyles({
+const useStyles = styled({
   checkButton: {
     marginTop: "20px", // Adjust this value as needed
   },

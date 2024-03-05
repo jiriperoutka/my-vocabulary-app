@@ -12,9 +12,10 @@ import {
   MenuItem,
   Grid,
   Box,
-} from "@material-ui/core";
+} from "@mui/material";
 import { getLessons } from "../services/api"; // replace './api' with the actual path to the getLessons function
 import { useNavigate } from "react-router-dom";
+import { GrAchievement } from "react-icons/gr";
 
 const Practice = () => {
   const [lessons, setLessons] = React.useState([]);
@@ -58,8 +59,6 @@ const Practice = () => {
     setLessonNumber(event.target.value);
   };
 
-  // Rest of your component code...
-
   return (
     <div>
       <div
@@ -68,11 +67,7 @@ const Practice = () => {
         onClick={handleClickOpen}
       >
         Practice
-        <img
-          src="brain.png"
-          alt="brain"
-          style={{ width: "200px", height: "200px" }}
-        />
+        <GrAchievement size="8em" />
       </div>
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>What are we goona to practice?</DialogTitle>
